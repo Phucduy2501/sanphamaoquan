@@ -1,0 +1,120 @@
+#carousel {
+  margin-top: 50px;
+  margin-bottom: 220px;
+}
+
+#carousel h2 {
+  text-align: center;
+}
+
+.carousel__bg img {
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+}
+
+.carousel__item {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.carousel__text {
+  width: 48px;
+  height: 48px;
+  line-height: 45px;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s linear;
+}
+
+.carousel__item:hover .carousel__text {
+  display: none;
+}
+
+.carousel__icon i {
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  border: none;
+  background-color: #b31f2a;
+  color: white;
+}
+.carousel__icon {
+  position: absolute;
+  top: 165px;
+  left: 115px;
+  /* opacity: 0; */
+  display: none;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.carousel__item:hover .carousel__icon {
+  display: block;
+}
+
+.carousel__icon:hover i {
+  background-color: red;
+}
+
+.carousel__bg {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__small-q1 {
+  width: 63px;
+  height: 84px;
+}
+
+.carousel__small {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.4s linear;
+}
+
+.discounted_price {
+  font-size: 16px;
+  color: #c80204;
+}
+
+.original_price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 16px;
+}
+
+.price {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.product {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product a:hover {
+  color: #b31f2a;
+}

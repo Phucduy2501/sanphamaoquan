@@ -1,0 +1,43 @@
+.carousel__textt {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  background-color: #b31f2a;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.carousel__textt span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.carousel__item:hover .carousel__textt {
+  display: none;
+}
+
+/* .carousel:hover img {
+  background-image: url(../../public/img/domoi/ao1/ao-thun-in-trame-graphic-tennis-form-regular-at153-18803.jpg);
+} */
+
+.product a {
+  font-size: 14px;
+  color: #333;
+  text-transform: capitalize;
+  margin: 0 0 0;
+  padding-top: 5px;
+  height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  line-height: 18px;
+}

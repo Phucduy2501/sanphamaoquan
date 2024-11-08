@@ -1,0 +1,62 @@
+.policy__item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.policy__item ul li::marker {
+  content: "-";
+}
+
+.policy__item li {
+  font-size: 14px;
+  margin-left: 5px;
+  padding-left: 10px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.policy__item p {
+  font-size: 14px;
+  margin: 0;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.policy__icon i {
+  font-size: 25px;
+  color: #cccccc;
+  transition: color 0.3 linear;
+}
+
+.policy__icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.policy__item {
+  width: 300px;
+}
+
+#policy {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #cccccc1d;
+  width: 100%;
+}
+
+#policy .policy__item .policy__item-p {
+  color: black;
+  font-weight: 600;
+}
+
+.policy__item:hover .policy__icon i {
+  color: #666;
+}
+
+hr {
+  margin: 0;
+}

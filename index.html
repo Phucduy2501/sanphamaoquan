@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4menshop</title>
+
+    <!-- link font gg  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/carousel.css" />
+    <link rel="stylesheet" href="./src/css/cate.css" />
+    <link rel="stylesheet" href="./src/css/suachua.css" />
+    <link rel="stylesheet" href="./src/css/policy.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./public/img/logo.png" alt="" />
+      <nav id="header">
+        <ul>
+          <li>
+            <a href="#">HÀNG MỚI VỀ </a>
+          </li>
+          <li>
+            <a class="header__an" href="#">ÁO NAM</a>
+          </li>
+          <div class="item__aonam">
+            <ul>
+              <li>
+                <a href="#">Áo sơ mi</a>
+              </li>
+              <li>
+                <a href="#">Áo thun</a>
+              </li>
+              <li>
+                <a href="#">Áo polo</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="header__qn" href="#"> QUẦN NAM </a>
+          </li>
+          <div class="dropdown_content">
+            <ul>
+              <li>
+                <a href="#">Quần jeans</a>
+              </li>
+              <li>
+                <a href="#">Quần tây</a>
+              </li>
+              <li>
+                <a href="#">Quần kaki</a>
+              </li>
+              <li>
+                <a href="#">Quần jogger</a>
+              </li>
+              <li>
+                <a href="#">Quần short</a>
+              </li>
+              <li>
+                <a href="#">Quần lót</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="header__pk" href="#">PHỤ KIỆN </a>
+          </li>
+          <div class="item__pkien">
+            <ul>
+              <li>
+                <a href="#">Thắt lưng</a>
+              </li>
+              <li>
+                <a href="#">Ví</a>
+              </li>
+              <li>
+                <a href="#">Cà vạt</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="header__dep" href="#"> GIÀY DÉP</a>
+          </li>
+          <div class="item__dep">
+            <ul>
+              <li>
+                <a href="#">Giày</a>
+              </li>
+              <li>
+                <a href="#">Sandan</a>
+              </li>
+              <li>
+                <a href="#">Dép nam</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="#"> OUTLET SAFE</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__lf">
+        <div class="header__lf-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header__lf-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </header>
+    <section id="carousel">
+      <h2>THỜI TRANG HOT NHẤT</h2>
+      <div class="carousel__bg">
+        <div class="carousel__item">
+          <img
+            id="myImage9"
+            onmouseover="thayDoiAnh9()"
+            onmouseout="quayLaiAnhMacDinh9()"
+            src="./public/img/quantay/quan-tay-lung-thun-form-regular-qt060-18668.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-22%</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/quantay/quan-tay-tron-form-slimfit-qt058-mau-den-18346.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/quantay/quan-tay-lung-thun-form-regular-qt060-18669.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Quần Tây Trơn Form Slimfit QT058 Màu Đen</a>
+            <p class="price">
+              <span class="discounted_price">299.000₫</span>
+              <span class="original_price">395.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage10"
+            onmouseover="thayDoiAnh10()"
+            onmouseout="quayLaiAnhMacDinh10()"
+            src="./public/img/ao/ao-so-mi-regular-mr-friendly-asm092-16907.png"
+            alt="áo sơ mi"
+          />
+          <div class="carousel__text">
+            <span>-37%</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img src="./public/img/aonho/-16908.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/aonho/-16909.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/aonho/-16910.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/aonho/-16911.png" alt="" />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Sơ Mi Trơn Tay Ngắn Form Regular SM087 Màu</a>
+            <p class="price">
+              <span class="discounted_price">179.000₫</span>
+              <span class="original_price">285.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage11"
+            onmouseover="thayDoiAnh11()"
+            onmouseout="quayLaiAnhMacDinh11()"
+            src="./public/img/ao/ao-so-mi-tron-tay-dai-form-regular-sm088-16897.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-37%</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/sominho/ao-so-mi-regular-tron-tay-dai-sm088-mau-do-do-16898.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/sominho/-16899.jpg" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/sominho/-16900.jpg" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/sominho/more-item.jpg" alt="" />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Sơ Mi Trơn Tay Dài Form Regular SM088</a>
+            <p class="price">
+              <span class="discounted_price">199.000₫</span>
+              <span class="original_price">315.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage12"
+            onmouseover="thayDoiAnh12()"
+            onmouseout="quayLaiAnhMacDinh12()"
+            src="./public/img/quan/quan-kaki-co-nap-tui-sau-qk003-17766.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-30%</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img src="./public/img/quandainho/-17768.jpg" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/quandainho/-17777.jpg" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/quandainho/-17778.jpg" alt="" />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Quần Kaki Slimfit Trơn QK018 Màu Đen</a>
+            <p class="price">
+              <span class="discounted_price">299.000₫</span>
+              <span class="original_price">425.000₫</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cate">
+      <div class="cate__bg">
+        <div class="cate__img1">
+          <img
+            src="./public/img/cate/slide-1-trang-chu-slide-1.png"
+            alt="polo"
+          />
+        </div>
+        <div class="cate__img2">
+          <img
+            src="./public/img/cate/slide-2-trang-chu-slide-2.jpg"
+            alt="polo"
+          />
+        </div>
+        <div class="cate__img3">
+          <img
+            src="./public/img/cate/slide-4-trang-chu-slide-3.png"
+            alt="polo"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="carousel">
+      <h2>THỜI TRANG MỚI NHẤT</h2>
+      <div class="carousel__bg">
+        <div class="carousel__item">
+          <img
+            id="myImage"
+            onmouseover="thayDoiAnh()"
+            onmouseout="quayLaiAnhMacDinh()"
+            src="./public/img/domoi/ao1/ao-thun-in-trame-graphic-tennis-form-regular-at153-18803.jpg"
+            alt="quần"
+          />
+          <div class="carousel__textt">
+            <span>New</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao2/ao-thun-tron-vai-rayon-theu-4men-club-tay-ao-form-slimfit-at155-18804.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao2/ao-thun-tron-vai-rayon-theu-4men-club-tay-ao-form-slimfit-at155-18805.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao2/ao-thun-tron-vai-rayon-theu-4men-club-tay-ao-form-slimfit-at155-mau-be-18806.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao2/ao-thun-tron-vai-rayon-theu-4men-club-tay-ao-form-slimfit-at155-mau-xanh-bien-dam-18807.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Thun Trơn Vải Rayon Thêu 4MEN Club Tay Áo For</a>
+            <p class="price">
+              <span class="discounted_price">245.000₫</span>
+              <!-- <span class="original_price">395.000₫</span> -->
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage2"
+            onmouseover="thayDoiAnh2()"
+            onmouseout="quayLaiAnhMacDinh2()"
+            src="./public/img/domoi/ao1/ao-polo-vai-soc-ngang-theu-4m-o-lai-form-regular-po142-18798.jpg"
+            alt="áo sơ mi"
+          />
+          <div class="carousel__textt">
+            <span>New</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img src="./public/img/domoi/ao3/-16908.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/domoi/ao3/-16909.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/domoi/ao3/-16910.png" alt="" />
+            </div>
+            <div class="carousel__small-q1">
+              <img src="./public/img/domoi/ao3/-16911.png" alt="" />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Polo Vải Modal Thêu 4MEN Club Tay Áo Form Sli</a>
+            <p class="price">
+              <span class="discounted_price">345.000 đ</span>
+              <!-- <span class="original_price">285.000₫</span> -->
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage3"
+            onmouseover="thayDoiAnh3()"
+            onmouseout="quayLaiAnhMacDinh3()"
+            src="./public/img/domoi/ao1/ao-so-mi-tay-ngan-2-tui-theu-4m-form-regular-sm164-18794.jpg"
+            alt="quần"
+          />
+          <div class="carousel__textt">
+            <span>New</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao4/ao-so-mi-tay-ngan-2-tui-theu-4m-form-regular-sm164-18795.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao4/ao-so-mi-tay-ngan-2-tui-theu-4m-form-regular-sm164-mau-trang-18796.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Sơ Mi Trơn Tay Dài Form Regular SM088</a>
+            <p class="price">
+              <span class="discounted_price">375.000 ₫</span>
+              <!-- <span class="original_price">315.000₫</span> -->
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage4"
+            onmouseover="thayDoiAnh4()"
+            onmouseout="quayLaiAnhMacDinh4()"
+            src="./public/img/domoi/ao1/ao-so-mi-theu-3-soc-o-nguc-form-slimfit-sm163-18793.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-37%</span>
+          </div>
+          <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/domoi/ao5/ao-so-mi-theu-3-soc-o-nguc-form-slimfit-sm163-18793.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#">Áo Sơ Mi Thêu 3 Sọc Ở Ngực Form Slimfit SM163</a>
+            <p class="price">
+              <span class="discounted_price">199.000 ₫</span>
+              <span class="original_price">315.000 ₫</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="carousel">
+      <h2>THỜI TRANG BÁN CHẠY</h2>
+      <div class="carousel__bg">
+        <div class="carousel__item">
+          <img
+            id="myImage5"
+            onmouseover="thayDoiAnh5()"
+            onmouseout="quayLaiAnhMacDinh5()"
+            src="./public/img/banchay/chay1/ao-so-mi-vai-bamboo-theu-gentlemen-o-mang-sec-form-slimfit-sm155-18676.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-37%</span>
+          </div>
+          <!-- <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div> -->
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay2/ao-so-mi-vai-oxford-soc-form-regular-sm159-18677.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay2/ao-so-mi-vai-oxford-soc-form-regular-sm159-soc-xanh-bien-18678.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay2/ao-so-mi-vai-oxford-soc-form-regular-sm159-soc-xanh-bien-18679.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#"
+              >Áo Sơ Mi Vải Oxford Sọc Form Regular SM159 Sọc Xanh Biển</a
+            >
+            <p class="price">
+              <span class="discounted_price">249.000₫</span>
+              <span class="original_price">395.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage6"
+            onmouseover="thayDoiAnh6()"
+            onmouseout="quayLaiAnhMacDinh6()"
+            src="./public/img/banchay/chay1/quan-short-lung-thun-cai-nut-theu-4tc-form-straight-qs058-mau-trang-18651.jpg"
+            alt="áo sơ mi"
+          />
+          <div class="carousel__text">
+            <span>-27%</span>
+          </div>
+          <!-- <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div> -->
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay3/quan-short-kaki-lung-thun-cai-nut-form-regular-qs060-mau-be-18655.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay3/quan-short-kaki-lung-thun-cai-nut-form-regular-qs060-mau-xam-18652.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay3/quan-short-kaki-lung-thun-cai-nut-form-regular-qs060-mau-xam-18653.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay3/quan-short-kaki-lung-thun-cai-nut-form-regular-qs060-mau-xanh-den-18654.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#"
+              >Quần Short Kaki Lưng Thun Cài Nút Form Regular QS060 Màu Be</a
+            >
+            <p class="price">
+              <span class="discounted_price">229.000 đ</span>
+              <span class="original_price">315.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage7"
+            onmouseover="thayDoiAnh7()"
+            onmouseout="quayLaiAnhMacDinh7()"
+            src="./public/img/banchay/chay1/ao-thun-soc-ngang-nautical-theu-hinh-o-nguc-form-regular-at149-18594.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-39%</span>
+          </div>
+          <!-- <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div> -->
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay4/ao-thun-ra-vai-theu-chu-ky-4men-o-nguc-form-regular-at154-18595.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay4/ao-thun-ra-vai-theu-chu-ky-4men-o-nguc-form-regular-at154-mau-den-18596.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay4/ao-thun-ra-vai-theu-chu-ky-4men-o-nguc-form-regular-at154-mau-trang-18597.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay4/ao-thun-ra-vai-theu-chu-ky-4men-o-nguc-form-regular-at154-mau-xanh-den-18598.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#"
+              >Áo Thun Rã Vai Thêu Chữ Ký 4MEN Ở Ngực Form Regular AT154 Màu
+              Đen</a
+            >
+            <p class="price">
+              <span class="discounted_price">149.000 ₫</span>
+              <span class="original_price">245.000₫</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img
+            id="myImage8"
+            onmouseover="thayDoiAnh8()"
+            onmouseout="quayLaiAnhMacDinh8()"
+            src="./public/img/banchay/chay1/ao-so-mi-tay-dai-oxford-soc-4men-form-regular-sm152-18580.jpg"
+            alt="quần"
+          />
+          <div class="carousel__text">
+            <span>-39%</span>
+          </div>
+          <!-- <div class="carousel__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div> -->
+          <div class="carousel__small">
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay5/ao-so-mi-tay-dai-oxford-soc-4men-form-regular-sm152-18581.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay5/ao-so-mi-tay-ngan-co-cuban-tron-form-regular-sm151-mau-be-18584.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay5/ao-so-mi-tay-ngan-co-cuban-tron-form-regular-sm151-mau-den-18583.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__small-q1">
+              <img
+                src="./public/img/banchay/chay5/ao-so-mi-tay-ngan-co-cuban-tron-form-regular-sm151-mau-trang-18582.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product">
+            <a href="#"
+              >Áo Sơ Mi Tay Ngắn Cổ Cuban Trơn Form Regular SM151 Màu Xanh
+              Biển</a
+            >
+            <p class="price">
+              <span class="discounted_price">179.000 ₫</span>
+              <span class="original_price">295.000 ₫</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="policy">
+      <div class="policy__item">
+        <div class="policy__icon">
+          <i class="fa-solid fa-plane"></i>
+          <h3>THANH TOÁN & GIAO HÀNG</h3>
+        </div>
+
+        <p>Miễn phí vận chuyển cho đơn hàng trên 399.000 VNĐ</p>
+        <ul>
+          <li>Giao hàng và thu tiền tận nơi</li>
+          <li>Chuyển khoản và giao hàng</li>
+          <li>Mua hàng tại shop</li>
+        </ul>
+      </div>
+      <div class="policy__item">
+        <div class="policy__icon">
+          <i class="fa-regular fa-credit-card"></i>
+          <h3>THẺ THÀNH VIÊN</h3>
+        </div>
+
+        <p>Chế độ ưu đãi thành viên VIP:</p>
+        <ul>
+          <li>5% cho thành viên Bạc</li>
+          <li>10% cho thành viên Vàng</li>
+          <li>15% cho thành viên Kim cương</li>
+        </ul>
+      </div>
+      <div class="policy__item">
+        <div class="policy__icon">
+          <i class="fa-solid fa-clock"></i>
+          <h3>GIỜ MỞ CỬA</h3>
+        </div>
+
+        <p class="policy__item-p">8h30 đến 22:00</p>
+        <ul>
+          <li>Tất cả các ngày trong tuần</li>
+          <li>Áp dụng cho tất cả các chi nhánh hệ thống cửa hàng 4MEN</li>
+        </ul>
+      </div>
+      <div class="policy__item">
+        <div class="policy__icon">
+          <i class="fa-solid fa-phone"></i>
+          <h3>HỖ TRỢ 24/7</h3>
+        </div>
+
+        <p>Gọi ngay cho chúng tôi khi bạn có thắc mắc</p>
+        <ul>
+          <li>0868.444.644</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__lf">
+        <img src="./public/img/logo-footer.png" alt="" />
+        <ul>
+          <li>
+            <a href="#">Giới Thiệu</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Tuyển dụng</a>
+          </li>
+          <li>
+            <a href="#">Tin tức</a>
+          </li>
+        </ul>
+        <div class="footer__em">
+          <i class="fa-solid fa-envelope"></i>
+          email:
+          <a href="mailto: info@4menshop.com"> info@4menshop.com</a>
+        </div>
+        <div class="footer__em">
+          <i class="fa-solid fa-phone"></i>
+          Hotline:
+          <a href="tel:+0868.444.644">0868.444.644</a>
+        </div>
+      </div>
+      <div class="footer__bt">
+        <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+        <ul>
+          <li>
+            <a href="#">Hướng dẫn đặt hàng</a>
+          </li>
+          <li>
+            <a href="#">Hướng dẫn chọn size</a>
+          </li>
+          <li>
+            <a href="#">Câu hỏi thường gặp</a>
+          </li>
+          <li>
+            <a href="#">Chính sách khách VIP</a>
+          </li>
+          <li>
+            <a href="#">Thanh toán - Giao hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách đổi hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Chính sách cookie</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__ht">
+        <h5>HỆ THỐNG CỦA HÀNG</h5>
+        <a href="#" title="cua hang">
+          <img
+            loading="lazy"
+            src="https://4menshop.com/images/footer-map.jpg"
+            alt="dang ky bo cong thuong"
+          />
+        </a>
+        <a href="#">Tìm địa chỉ CỬA HÀNG gần bạn »</a>
+      </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
